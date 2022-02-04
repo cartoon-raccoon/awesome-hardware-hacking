@@ -16,35 +16,38 @@ Happy hacking!
 
 ## Table of Contents
 
-1. [**UART/SPI/I2C/JTAG**](#1)
-2. [**USB**](#2)
-3. [**RF**](#3)
-4. [**Automotive**](#4)
-5. [**Glitching/Cracking**](#5)
-6. [**Analysis/Measurement**](#6)
-7. [**Soldering/Rework/Programming**](#7)
-8. [**Development**](#8)
-9. [**Other Resources**](#9)
+1. [**Serial Protocols**](#1-serial-protocols)
+2. [**USB**](#2-usb)
+3. [**RF**](#3-rf-wip)
+4. [**Automotive**](#4-automotive-wip)
+5. [**Glitching and Cracking**](#5-glitching-and-cracking)
+6. [**Analysis and Measurement**](#6-analysis-and-measurement)
+7. [**Programmers and Sockets**](#7-programmers-and-sockets-wip)
+8. [**Soldering and Rework**](#8-soldering-and-rework-wip)
+9. [**Development**](#8-development-wip)
+10. [**Other Resources**](#9-other-resources)
 
 ---
 
-## 1. UART/SPI/I2C/JTAG
+## 1. Serial Protocols
 
 - What is [UART](https://www.arrow.com/en/research-and-events/articles/what-is-uart-protocol-uart-communication-explained)/[SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface)/[I2C](https://en.wikipedia.org/wiki/I%C2%B2C)/[JTAG](https://en.wikipedia.org/wiki/JTAG)?
 
 ### Hardware
 
-- [Tigard](https://github.com/tigard-tools/tigard) (All 4)
-- [GreatFET One](https://greatscottgadgets.com/greatfet/one/) (All 4 + USB)
-- [HydraBus](https://hydrabus.com/?v=0f177369a3b7) (All 4 and more!)
-- [Shikra](https://int3.cc/products/the-shikra) (All 4)
-- [Attify Badge](https://www.attify-store.com/products/attify-badge-uart-jtag-spi-i2c) (All 4)
-- [Bus Pirate](http://dangerousprototypes.com/docs/Bus_Pirate) (All 4, outdated, use something else)
-- Arduino [Uno](https://www.arduino.cc/en/pmwiki.php?n=Main/arduinoBoardUno)/[Nano](https://www.arduino.cc/en/pmwiki.php?n=Main/ArduinoBoardNano) (JTAG enumeration, UART)
-- [Seeeduino Nano](https://www.seeedstudio.com/Seeeduino-Nano-p-4111.html) (see above)
-- Generic FT2232 Serial-USB breakout board ([Micro-USB](https://www.sparkfun.com/products/12731))
-- [JTAGulator](http://www.grandideastudio.com/jtagulator/) (JTAG/UART Enumeration)
-- [Segger J-Link Edu](https://www.adafruit.com/product/1369) (JTAG debugger)
+- _Multitools_
+  - [Tigard](https://github.com/tigard-tools/tigard) (All 4)
+  - [GreatFET One](https://greatscottgadgets.com/greatfet/one/) (All 4 + USB)
+  - [HydraBus](https://hydrabus.com/?v=0f177369a3b7) (All 4 and more!)
+  - [Shikra](https://int3.cc/products/the-shikra) (All 4)
+  - [Attify Badge](https://www.attify-store.com/products/attify-badge-uart-jtag-spi-i2c) (All 4)
+  - [Bus Pirate](http://dangerousprototypes.com/docs/Bus_Pirate) (All 4, outdated, use something else)
+  - Generic FT2232 Serial-USB breakout board ([Micro-USB](https://www.sparkfun.com/products/12731))
+- _Other Tools_
+  - Arduino [Uno](https://www.arduino.cc/en/pmwiki.php?n=Main/arduinoBoardUno)/[Nano](https://www.arduino.cc/en/pmwiki.php?n=Main/ArduinoBoardNano) (JTAG enumeration, UART)
+  - [Seeeduino Nano](https://www.seeedstudio.com/Seeeduino-Nano-p-4111.html) (see above)
+  - [JTAGulator](http://www.grandideastudio.com/jtagulator/) (JTAG/UART Enumeration)
+  - [Segger J-Link Edu](https://www.adafruit.com/product/1369) (JTAG debugger)
 
 ### Software
 
@@ -108,7 +111,7 @@ Happy hacking!
 
 ---
 
-## 5. Glitching/Cracking
+## 5. Glitching and Cracking
 
 ### Hardware
 
@@ -122,7 +125,7 @@ Happy hacking!
 
 ---
 
-## 6. Analysis/Measurement
+## 6. Analysis and Measurement
 
 ### Hardware
 
@@ -161,7 +164,20 @@ Happy hacking!
 
 ---
 
-## 7. Soldering/Rework/Programming (WIP)
+## 7. Programmers and Sockets (WIP)
+
+These are used to program non-volatile memory such as EEPROMS. Normally used with SPI.
+
+Generally, you should have a programmer capable of writing to most (E)EPROMS, and adapters for non-DIP form factors like SOIC or TSOP. Most sellers will add on these accessories at a cost.
+
+An SOIC8 clip is usually a must.
+
+- [Generic CH341A Programmer](https://www.aliexpress.com/item/1005003515809868.html)
+- [TL866II EEPROM Programmer](https://www.aliexpress.com/item/32963724045.html)
+
+---
+
+## 8. Soldering and Rework (WIP)
 
 ### Soldering Irons
 
@@ -204,20 +220,9 @@ I don't think I need to link these, right? Google is your friend.
 - Breadboard/Perfboard
 - Various electronic components
 
-### Programmers and Sockets (WIP)
-
-These are used to program non-volatile memory such as EEPROMS. Normally used with SPI.
-
-Generally, you should have a programmer capable of writing to most (E)EPROMS, and adapters for non-DIP form factors like SOIC or TSOP. Most sellers will add on these accessories at a cost.
-
-An SOIC8 clip is usually a must.
-
-- [Generic CH341A Programmer](https://www.aliexpress.com/item/1005003515809868.html)
-- [TL866II EEPROM Programmer](https://www.aliexpress.com/item/32963724045.html)
-
 ---
 
-## 8. Development (WIP)
+## 9. Development (WIP)
 
 ### Hardware
 
@@ -238,7 +243,7 @@ An SOIC8 clip is usually a must.
 
 ---
 
-## 9. Other Resources
+## 10. Other Resources
 
 ### Publications
 
