@@ -16,19 +16,19 @@ Happy hacking!
 
 ## Table of Contents
 
-1. [**UART/SPI/I2C/JTAG**](/README.md/#UART/SPI/I2C/JTAG)
-2. [**USB**](/README.md/#USB)
-3. [**RF**](/README.md/#RF)
-4. [**Automotive**](/README.md#Automotive)
-5. [**Glitching/Cracking**](/README.md#Glitching/Cracking)
-6. [**Analysis/Measurement**](/README.md#Analysis/Measurement)
-7. [**Soldering/Rework/Programming**](/README.md#Soldering/Rework/Programming)
-8. [**Development**](/README.md#Development)
-9. [**Other Resources**](/README.md#Other_Resources)
+1. [**UART/SPI/I2C/JTAG**](#1)
+2. [**USB**](#2)
+3. [**RF**](#3)
+4. [**Automotive**](#4)
+5. [**Glitching/Cracking**](#5)
+6. [**Analysis/Measurement**](#6)
+7. [**Soldering/Rework/Programming**](#7)
+8. [**Development**](#8)
+9. [**Other Resources**](#9)
 
 ---
 
-## UART/SPI/I2C/JTAG
+## 1. UART/SPI/I2C/JTAG
 
 - What is [UART](https://www.arrow.com/en/research-and-events/articles/what-is-uart-protocol-uart-communication-explained)/[SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface)/[I2C](https://en.wikipedia.org/wiki/I%C2%B2C)/[JTAG](https://en.wikipedia.org/wiki/JTAG)?
 
@@ -60,7 +60,7 @@ Happy hacking!
 
 ---
 
-## USB
+## 2. USB
 
 ### Hardware
 
@@ -76,7 +76,7 @@ Happy hacking!
 
 ---
 
-## RF (WIP)
+## 3. RF (WIP)
 
 ### Hardware
 
@@ -95,7 +95,7 @@ Happy hacking!
 
 ---
 
-## Automotive (WIP)
+## 4. Automotive (WIP)
 
 ### Hardware
 
@@ -108,7 +108,7 @@ Happy hacking!
 
 ---
 
-## Glitching/Cracking
+## 5. Glitching/Cracking
 
 ### Hardware
 
@@ -122,7 +122,7 @@ Happy hacking!
 
 ---
 
-## Analysis/Measurement
+## 6. Analysis/Measurement
 
 ### Hardware
 
@@ -161,7 +161,7 @@ Happy hacking!
 
 ---
 
-## Soldering/Rework/Programming (WIP)
+## 7. Soldering/Rework/Programming (WIP)
 
 ### Soldering Irons
 
@@ -217,7 +217,7 @@ An SOIC8 clip is usually a must.
 
 ---
 
-## Development (WIP)
+## 8. Development (WIP)
 
 ### Hardware
 
@@ -238,7 +238,7 @@ An SOIC8 clip is usually a must.
 
 ---
 
-## Other Resources
+## 9. Other Resources
 
 ### Publications
 
