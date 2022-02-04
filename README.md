@@ -10,6 +10,8 @@ Have I got the solution for you!
 
 This compendium was born out of my initial confusion, and overwhelming from all the various types of hardware hacking tools, resources, and types that are out there. I intend for this to track which tools are available for each aspect of hardware tinkering, as well as various resources that may come in handy.
 
+Several sections are still a work in progress, and I hope to add items to them as I branch out into those fields.
+
 Happy hacking!
 
 ---
@@ -18,18 +20,20 @@ Happy hacking!
 
 1. [**Serial Protocols**](#1-serial-protocols)
 2. [**USB**](#2-usb)
-3. [**RF**](#3-rf-wip)
-4. [**Automotive**](#4-automotive-wip)
-5. [**Glitching and Cracking**](#5-glitching-and-cracking)
-6. [**Analysis and Measurement**](#6-analysis-and-measurement)
-7. [**Programmers and Sockets**](#7-programmers-and-sockets-wip)
-8. [**Soldering and Rework**](#8-soldering-and-rework-wip)
-9. [**Development**](#9-development-wip)
+3. [**RF**](#3-rf)
+4. [**Automotive**](#4-automotive)
+5. [**Glitching and Fault Injection**](#5-glitching-and-fault-injection)
+6. [**Reverse Engineering and Emulation**](#6-reverse-engineering-and-emulation)
+7. [**Programmers and Sockets**](#7-programmers-and-sockets)
+8. [**Soldering and Rework**](#8-soldering-and-rework)
+9. [**Development**](#9-development)
 10. [**Other Resources**](#10-other-resources)
 
 ---
 
 ## 1. Serial Protocols
+
+The one thing every hardware enthusiast must have in their toolkit is a way of communicating via serial protocols. The most common are UART, SPI and I2C. Luckily, people have realized this and have created multitool boards that speak these 3 protocols, plus an additional protocol called JTAG, which isn't technically serial communication but is so common it's included anyway. These boards don't natively speak the protocol; instead they are driven by software tools that help them speak the protocol.
 
 - What is [UART](https://www.arrow.com/en/research-and-events/articles/what-is-uart-protocol-uart-communication-explained)/[SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface)/[I2C](https://en.wikipedia.org/wiki/I%C2%B2C)/[JTAG](https://en.wikipedia.org/wiki/JTAG)?
 
@@ -65,6 +69,8 @@ Happy hacking!
 
 ## 2. USB
 
+Even though USB is technically a serial communication/data transfer protocol, it is a lot more complex than UART/SPI, involving device descriptors, polling, and differential signalling, and thus is usually treated differently than the other serial protocols. Fewer tools exist for USB hacking, but it is an equally rewarding field.
+
 ### Hardware
 
 - [PhyWhisperer](https://github.com/newaetech/phywhispererusb) (sniffing/triggering)
@@ -79,7 +85,9 @@ Happy hacking!
 
 ---
 
-## 3. RF (WIP)
+## 3. RF
+
+RF hacking is usually concerned with the Internet of Things (IoT). Since so many IoT devices communicate via wireless technology, there ought to be a way to compromise them through hacking their communications, right?
 
 ### Hardware
 
@@ -98,7 +106,9 @@ Happy hacking!
 
 ---
 
-## 4. Automotive (WIP)
+## 4. Automotive
+
+Cars are hackable too! Each component is wired up to form a Controller Area Network (CAN), which all components communicate on. From the ECU to the stereo system, everything communicates via the CAN bus. You could always find a way in and inject some malicious traffic, couldn't you?
 
 ### Hardware
 
@@ -111,11 +121,14 @@ Happy hacking!
 
 ---
 
-## 5. Glitching and Cracking
+## 5. Glitching and Fault Injection
+
+This is for the real hardware tinkerers. Screw software folks and their binary exploitation and instruction sets, let's just hit everything with fault injection or SCA. Here, you can use differential power analysis (DPA) to break AES encryption, or use fault injection to glitch a chip into bypassing the login prompt straight into a root shell.
 
 ### Hardware
 
 - [ChipWhisperer](https://github.com/newaetech/chipwhisperer) (Glitching, SCA, DPA)
+- [Homemade EMFI Tool](https://hackaday.com/2022/01/29/blast-chips-with-this-bbq-lighter-fault-injection-tool/)
 
 ### Software
 
@@ -125,7 +138,11 @@ Happy hacking!
 
 ---
 
-## 6. Analysis and Measurement
+## 6. Reverse Engineering and Emulation
+
+How can you tell what black magic the board you're targeting is up to? Every hardware enthusiast needs some analysis tools to see what's going on under the hood. Oscilloscopes can tell you about the power draw on various pins, while logic analyzers can help you decode a mystery protocol some data lines are communicating on. The trusty multimeter can help you find GND, or if a mysterious desoldered pad is in fact a JTAG header.
+
+On the software side, you've found a mysterious binary on the target system. How are you gonna run/debug it? QEMU and various kernel builders can help you craft the perfect emulation environment, complete with GDB and debugging symbols, to help you figure out what that weird program is doing.
 
 ### Hardware
 
@@ -161,6 +178,11 @@ Happy hacking!
 - [DSView](https://www.dreamsourcelab.com/download/) (works best with DSLogic Plus)
 - [Sigrok](https://github.com/sigrokproject/libsigrok) ([CLI](http://sigrok.org/wiki/Sigrok-cli)/[Pulseview](https://github.com/sigrokproject/pulseview)) (Open-source option)
   - [Supported hardware](https://sigrok.org/wiki/Supported_hardware)
+- _Reverse Engineering and Emulation_
+  - [QEMU](https://www.qemu.org/) ([documentation](https://qemu-project.gitlab.io/qemu/))
+  - [Yocto Project](https://www.yoctoproject.org/) (building the target environment to emulate on QEMU)
+  - [Buildroot](https://buildroot.org/) (like Yocto but simpler, builds kernel and root FS only)
+  - [OpenWRT](https://openwrt.org/) (similar but targeted at routers)
 
 ### Accessories
 
@@ -168,7 +190,7 @@ Happy hacking!
 
 ---
 
-## 7. Programmers and Sockets (WIP)
+## 7. Programmers and Sockets
 
 These are used to program non-volatile memory such as EEPROMS. Normally used with SPI.
 
@@ -181,17 +203,19 @@ An SOIC8 clip is usually a must.
 
 ---
 
-## 8. Soldering and Rework (WIP)
+## 8. Soldering and Rework
+
+What are you doing without a soldering iron? How're you gonna get that TSOP48 flash chip off the PCB? A flathead screwdriver and a prayer?
 
 ### Soldering Irons
 
-- _Mains Powered Irons_
+- _Standard Irons_
   - [KSGER T12 Soldering Iron](https://www.aliexpress.com/item/32971888371.html)
   - [Aixun T3A](https://www.aliexpress.com/item/1005002983155657.html)
   - [XTronic 3020-XTS](https://www.amazon.com/dp/B01DGZFSNE/)
   - [Hakko 888D](https://www.amazon.com/dp/B00ANZRT4M/)
   - [Weller WE-1010](https://www.amazon.com/Weller-WE1010NA-Digital-Soldering-Station/dp/B077JDGY1J/)
-- _USB-Powered Irons_
+- _Portable Irons_
   - [TS100](https://www.aliexpress.com/item/32860309312.html)
   - [TS80P](https://www.aliexpress.com/item/32904980528.html)
   - [Pinecil](https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/)
@@ -226,7 +250,9 @@ I don't think I need to link these, right? Google is your friend.
 
 ---
 
-## 9. Development (WIP)
+## 9. Development
+
+Sometimes the tools you have just aren't doing the exact job you need them to, or maybe there's the perfect tool out there but you need to cough up a neat pile of Benjamins to get your hands on it _cough_ <sub>JTAGulator</sub> _cough_. Just trade spending your money for using your precious time to create your own tool for the job instead!
 
 ### Hardware
 
@@ -248,6 +274,8 @@ I don't think I need to link these, right? Google is your friend.
 ---
 
 ## 10. Other Resources
+
+A lot of hacking isn't just tinkering around with boards and tools. Yes, that's what it is a lot of the time, but we also should learn from the best in our field, who were generous enough to share their knowledge in writing. The following is some of the best work put out by the best hacking heroes, and their contributions should not go unnnoticed.
 
 ### Publications
 
