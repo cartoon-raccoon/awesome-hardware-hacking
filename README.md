@@ -42,7 +42,7 @@ The one thing every hardware enthusiast must have in their toolkit is a way of c
 - _Multitools_
   - [Tigard](https://github.com/tigard-tools/tigard) (All 4)
   - [GreatFET One](https://greatscottgadgets.com/greatfet/one/) (All 4 + USB)
-  - [HydraBus](https://hydrabus.com/?v=0f177369a3b7) (All 4 and more!)
+  - [HydraBus](https://hydrabus.com/?v=0f177369a3b7) (All 4 and [more](https://github.com/hydrabus/hydrafw/wiki/HydraFW-console-commands)!)
   - [Shikra](https://int3.cc/products/the-shikra) (All 4)
   - [Attify Badge](https://www.attify-store.com/products/attify-badge-uart-jtag-spi-i2c) (All 4)
   - [Bus Pirate](http://dangerousprototypes.com/docs/Bus_Pirate) (All 4, outdated, use something else)
@@ -178,7 +178,7 @@ On the software side, you've found a mysterious binary on the target system. How
 - [DSView](https://www.dreamsourcelab.com/download/) (works best with DSLogic Plus)
 - [Sigrok](https://github.com/sigrokproject/libsigrok) ([CLI](http://sigrok.org/wiki/Sigrok-cli)/[Pulseview](https://github.com/sigrokproject/pulseview)) (Open-source option)
   - [Supported hardware](https://sigrok.org/wiki/Supported_hardware)
-- _Reverse Engineering and Emulation_
+- _Emulation and Environment Building_
   - [QEMU](https://www.qemu.org/) ([documentation](https://qemu-project.gitlab.io/qemu/))
   - [Yocto Project](https://www.yoctoproject.org/) (building the target environment to emulate on QEMU)
   - [Buildroot](https://buildroot.org/) (like Yocto but simpler, builds kernel and root FS only)
