@@ -24,8 +24,8 @@ Happy hacking!
 6. [**Analysis and Measurement**](#6-analysis-and-measurement)
 7. [**Programmers and Sockets**](#7-programmers-and-sockets-wip)
 8. [**Soldering and Rework**](#8-soldering-and-rework-wip)
-9. [**Development**](#8-development-wip)
-10. [**Other Resources**](#9-other-resources)
+9. [**Development**](#9-development-wip)
+10. [**Other Resources**](#10-other-resources)
 
 ---
 
