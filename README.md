@@ -147,6 +147,10 @@ Happy hacking!
   - [Brymen BM869S](https://brymenmeter.com/brymen-bm869s-multimeter.html)
   - [Fluke 115](https://www.fluke.com/en-us/product/electrical-testing/digital-multimeters/fluke-115)
   - [Fluke 87V](https://www.fluke.com/en-us/product/electrical-testing/digital-multimeters/fluke-87v)
+- _Microscopes_
+  - [Unbranded 600X Digital Microscope](https://www.aliexpress.com/item/32846603691.html)
+  - [Celestron Digital Microscope](https://www.amazon.sg/Celestron-MicroDirect-Handheld-Microscope-44316/dp/B01MF5KMBL/)
+  - [ANNLOV 1-1200X 7in Digital Microscope](https://www.amazon.com/Microscope-ANNLOV-Maginfication-Electronic-Adjustable/dp/B087311SKR/)
 - _Function Generators_ (WIP) (UNI-T)
 - _Power Supply Units_ (WIP) (Tenma)
 
