@@ -61,7 +61,7 @@ The one thing every hardware enthusiast must have in their toolkit is a way of c
 - [UrJTAG](http://urjtag.org/) (low-level JTAG interface)
 - [picocom](https://github.com/npat-efault/picocom)/[minicom](https://wiki.emacinc.com/wiki/Getting_Started_With_Minicom)/[screen](https://www.gnu.org/software/screen/)/[PuTTY](https://www.putty.org/) (UART interface)
   - _Tip: Stick to picocom, PuTTY for Windows. Minicom and Screen are ancient._
-- [flashrom](https://www.flashrom.org/Flashrom) (SPI flashing)
+- [flashrom](https://www.flashrom.org/Flashrom) (SPI flashing/reading)
 - [pyftdi](https://eblot.github.io/pyftdi/)/[spiflash](https://github.com/eblot/pyspiflash) (programmatic SPI/I2C via FTDI)
 - [libmpsse](https://github.com/devttys0/libmpsse) (programmatic SPI)
 
@@ -75,7 +75,7 @@ Even though USB is technically a serial communication/data transfer protocol, it
 
 - [PhyWhisperer](https://github.com/newaetech/phywhispererusb) (sniffing/triggering)
 - [GreatFET One](https://greatscottgadgets.com/greatfet/one/) (USB interface)
-- [LUNA](https://greatscottgadgets.com/luna/) (protocol sniffer/analyzer)
+- [LUNA](https://greatscottgadgets.com/luna/) (protocol sniffer/analyzer/MitM)
 - [FaceDancer 21](https://int3.cc/products/facedancer21) (supplanted by GreatFET)
 
 ### Software
@@ -88,6 +88,8 @@ Even though USB is technically a serial communication/data transfer protocol, it
 ## 3. RF
 
 RF hacking is usually concerned with the Internet of Things (IoT). Since so many IoT devices communicate via wireless technology, there ought to be a way to compromise them through hacking their communications, right?
+
+Of course, you don't have to take it that far. Why not just try hijacking the connection with your wireless USB mouse instead?
 
 ### Hardware
 
@@ -149,6 +151,8 @@ On the software side, you've found a mysterious binary on the target system. How
 - _Oscilloscopes_
   - [Rigol DS1000Z-series Oscilloscopes](https://int.rigol.com/products/detail/DS1000Z) (Desktop)
   - [Picoscope 2000-series Oscilloscopes](https://www.picotech.com/oscilloscope/2000/picoscope-2000-overview) (USB)
+  - [Hantek DSO2000-series Oscilloscopes](http://www.hantek.com/products/detail/17182) (Great value for money)
+  - [FNIRSI 1014D Oscilloscope](https://www.aliexpress.com/item/1005002340647364.html) (Great entry level scope)
   - [ChipWhisperer](https://github.com/newaetech/chipwhisperer)
   - [Hantek 6022be](http://www.hantek.com/products/detail/31) (Not great, but it's cheap)
 - _Logic Analyzers_
@@ -164,6 +168,7 @@ On the software side, you've found a mysterious binary on the target system. How
   - [Brymen BM869S](https://brymenmeter.com/brymen-bm869s-multimeter.html)
   - [Fluke 115](https://www.fluke.com/en-us/product/electrical-testing/digital-multimeters/fluke-115)
   - [Fluke 87V](https://www.fluke.com/en-us/product/electrical-testing/digital-multimeters/fluke-87v)
+    - _Tip: avoid Flukes. They're great, but they're priced so high because they're designed for professional electricians and government/corporate applications, where trust and a long chain of auditing is required. You can get a multimeter with an almost equal feature set and build quality as a Fluke for a lot cheaper._
 - _Microscopes_
   - [Unbranded 600X Digital Microscope](https://www.aliexpress.com/item/32846603691.html)
   - [Celestron Digital Microscope](https://www.amazon.sg/Celestron-MicroDirect-Handheld-Microscope-44316/dp/B01MF5KMBL/)
