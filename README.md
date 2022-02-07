@@ -149,12 +149,12 @@ On the software side, you've found a mysterious binary on the target system. How
 ### Hardware
 
 - _Oscilloscopes_
-  - [Rigol DS1000Z-series Oscilloscopes](https://int.rigol.com/products/detail/DS1000Z) (Desktop)
-  - [Picoscope 2000-series Oscilloscopes](https://www.picotech.com/oscilloscope/2000/picoscope-2000-overview) (USB)
   - [Hantek DSO2000-series Oscilloscopes](http://www.hantek.com/products/detail/17182) (Great value for money)
   - [FNIRSI 1014D Oscilloscope](https://www.aliexpress.com/item/1005002340647364.html) (Great entry level scope)
+  - [Rigol DS1000Z-series Oscilloscopes](https://int.rigol.com/products/detail/DS1000Z) (Standard entry-level scopes)
+  - [Picoscope 2000-series Oscilloscopes](https://www.picotech.com/oscilloscope/2000/picoscope-2000-overview) (USB scope)
   - [ChipWhisperer](https://github.com/newaetech/chipwhisperer)
-  - [Hantek 6022be](http://www.hantek.com/products/detail/31) (Not great, but it's cheap)
+  - [Hantek 6022BE](http://www.hantek.com/products/detail/31) (Not great, but it's cheap)
 - _Logic Analyzers_
   - [Saleae Logic Pro Logic Analyzers](https://www.saleae.com/) (8-16ch, 25-100MHz/100-500MS/s)
   - [DSLogic Plus Logic Analyzer](https://www.dreamsourcelab.com/shop/logic-analyzer/dslogic-plus/) (16ch, up to 400MHz)
@@ -174,7 +174,12 @@ On the software side, you've found a mysterious binary on the target system. How
   - [Celestron Digital Microscope](https://www.amazon.sg/Celestron-MicroDirect-Handheld-Microscope-44316/dp/B01MF5KMBL/)
   - [ANNLOV 1-1200X 7in Digital Microscope](https://www.amazon.com/Microscope-ANNLOV-Maginfication-Electronic-Adjustable/dp/B087311SKR/)
 - _Function Generators_ (WIP) (UNI-T)
-- _Power Supply Units_ (WIP) (Tenma)
+- _Power Supply Units_
+  - [MDP-P905 Mini Power Supply](https://www.aliexpress.com/item/33056122346.html)
+  - [Hantek Power Supply](https://www.aliexpress.com/item/1005003642478236.html)
+  - [Wanptek Power Supply](https://www.aliexpress.com/item/1005001798369404.html)
+  - [Build Your Own Variable Lab Bench Power Supply](https://www.youtube.com/watch?v=wI-KYRdmx-E)
+  - [Simple Power Supply That Anyone Can Build](https://dronebotworkshop.com/simple-supply/)
 
 ### Software
 
