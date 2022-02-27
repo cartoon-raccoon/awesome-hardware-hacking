@@ -33,7 +33,7 @@ Happy hacking!
 
 ## 1. Serial Protocols
 
-The one thing every hardware enthusiast must have in their toolkit is a way of communicating via serial protocols. The most common are UART, SPI and I2C. Luckily, people have realized this and have created multitool boards that speak these 3 protocols, plus an additional protocol called JTAG, which isn't technically serial communication but is so common it's included anyway. These boards don't natively speak the protocol; instead they are driven by software tools that help them speak the protocol.
+The one thing every hardware enthusiast must have in their toolkit is a way of communicating via serial protocols. The most common are UART, SPI and I2C. Luckily, people have realized that an interface board for each protocol is a pain, and have created multitool boards that speak these 3 protocols, plus an additional protocol called JTAG, which isn't technically serial communication but is so common it's included anyway. These boards don't natively speak the protocol; instead they are driven by software tools that help them speak the protocol.
 
 - What is [UART](https://www.arrow.com/en/research-and-events/articles/what-is-uart-protocol-uart-communication-explained)/[SPI](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface)/[I2C](https://en.wikipedia.org/wiki/I%C2%B2C)/[JTAG](https://en.wikipedia.org/wiki/JTAG)?
 
@@ -149,15 +149,19 @@ On the software side, you've found a mysterious binary on the target system. How
 ### Hardware
 
 - _Oscilloscopes_
+_Tip: Get an oscilloscope with good memory depth. The ones listed here aren't great in that regard, but they have great value._
   - [Hantek DSO2000-series Oscilloscopes](http://www.hantek.com/products/detail/17182) (Great value for money)
-  - [FNIRSI 1014D Oscilloscope](https://www.aliexpress.com/item/1005002340647364.html) (Great entry level scope)
-  - [Rigol DS1000Z-series Oscilloscopes](https://int.rigol.com/products/detail/DS1000Z) (Standard entry-level scopes)
+  - [Hantek DSO4004-series Oscilloscopes](http://www.hantek.com/products/detail/12167) (Good starter for those with bigger budgets, comes with AWG)
+  - [FNIRSI 1014D Oscilloscope](https://www.aliexpress.com/item/1005002340647364.html) (Good entry level scope)
+  - [Rigol DS1000Z-series Oscilloscopes](https://int.rigol.com/products/detail/DS1000Z) (Standard entry-level scopes also great value)
   - [Picoscope 2000-series Oscilloscopes](https://www.picotech.com/oscilloscope/2000/picoscope-2000-overview) (USB scope)
   - [ChipWhisperer](https://github.com/newaetech/chipwhisperer)
   - [Hantek 6022BE](http://www.hantek.com/products/detail/31) (Not great, but it's cheap)
+  - Anything by Keysight/Tektronix is excellent. Only problem is they cost as much as a mid-tier sedan.
+    - The [Keysight DSO1204G](https://www.keysight.com/sg/en/support/DSOX1204G/oscilloscope-70-100-200-mhz-4-analog-channels-waveform-generator.html) is pretty good value, however, and is a good upgrade from a Hantek.
 - _Logic Analyzers_
   - [Saleae Logic Pro Logic Analyzers](https://www.saleae.com/) (8-16ch, 25-100MHz/100-500MS/s)
-  - [DSLogic Plus Logic Analyzer](https://www.dreamsourcelab.com/shop/logic-analyzer/dslogic-plus/) (16ch, up to 400MHz)
+  - [DSLogic Plus Logic Analyzer](https://www.dreamsourcelab.com/shop/logic-analyzer/dslogic-plus/) (16ch, up to 400MHz, best value)
   - [BitMagic Basic Logic Analyzer](https://1bitsquared.com/products/bitmagic-basic) (8ch 24MHz)
   - [Generic USB Saleae Logic 8 Clone](https://www.aliexpress.com/item/1005003812410259.html) (8ch 24MHz)
 - _Multimeters_
@@ -173,7 +177,9 @@ On the software side, you've found a mysterious binary on the target system. How
   - [Unbranded 600X Digital Microscope](https://www.aliexpress.com/item/32846603691.html)
   - [Celestron Digital Microscope](https://www.amazon.sg/Celestron-MicroDirect-Handheld-Microscope-44316/dp/B01MF5KMBL/)
   - [ANNLOV 1-1200X 7in Digital Microscope](https://www.amazon.com/Microscope-ANNLOV-Maginfication-Electronic-Adjustable/dp/B087311SKR/)
+  - [Andonstar](https://www.aliexpress.com/store/700244) is a fairly reputable brand, available on AliExpress/Banggood.
 - _Function Generators_ (WIP) (UNI-T)
+  - _Not as important for hardware hacking, but useful if you're tinkering with electronics in general. Some oscilloscopes come with a built-in function generator, so you can look out for those._
 - _Power Supply Units_
   - [MDP-P905 Mini Power Supply](https://www.aliexpress.com/item/33056122346.html)
   - [Hantek Power Supply](https://www.aliexpress.com/item/1005003642478236.html)
@@ -186,8 +192,10 @@ On the software side, you've found a mysterious binary on the target system. How
 - [Picoscope Software](https://www.picotech.com/downloads)
 - [Saleae Logic Pro](https://www.saleae.com/downloads/) (use with _legit_ Saleaes only)
 - [DSView](https://www.dreamsourcelab.com/download/) (works best with DSLogic Plus)
-- [Sigrok](https://github.com/sigrokproject/libsigrok) ([CLI](http://sigrok.org/wiki/Sigrok-cli)/[Pulseview](https://github.com/sigrokproject/pulseview)) (Open-source option)
+- [Sigrok](https://sigrok.org/wiki/Libsigrok) ([CLI](http://sigrok.org/wiki/Sigrok-cli)/[Pulseview](https://sigrok.org/wiki/PulseView)) (Open-source option)
   - [Supported hardware](https://sigrok.org/wiki/Supported_hardware)
+  - [Pulseview User Manual](https://sigrok.org/doc/pulseview/0.4.1/manual.html)
+  - [Sigrok GitHub mirror](https://github.com/sigrokproject)
 - _Emulation and Environment Building_
   - [QEMU](https://www.qemu.org/) ([documentation](https://qemu-project.gitlab.io/qemu/))
   - [Yocto Project](https://www.yoctoproject.org/) (building the target environment to emulate on QEMU)
@@ -196,7 +204,7 @@ On the software side, you've found a mysterious binary on the target system. How
 
 ### Accessories
 
-- [A good pair of test leads](https://www.digikey.sg/en/products/filter/test-clips-grabbers-hooks/620?s=N4IgTCBcDaIKYC8AEALA9mg1iAugXyA)
+- [A good set of test leads](https://www.digikey.sg/en/products/filter/test-clips-grabbers-hooks/620?s=N4IgTCBcDaIKYC8AEALA9mg1iAugXyA)
 
 ---
 
@@ -206,7 +214,7 @@ These are used to program non-volatile memory such as EEPROMS. Normally used wit
 
 Generally, you should have a programmer capable of writing to most (E)EPROMS, and adapters for non-DIP form factors like SOIC or TSOP. Most sellers will add on these accessories at a cost.
 
-An SOIC8 clip is usually a must.
+An SOIC8 clip is usually a good start to a collection that you can build up over time.
 
 - [Generic CH341A Programmer](https://www.aliexpress.com/item/1005003515809868.html)
 - [TL866II EEPROM Programmer](https://www.aliexpress.com/item/32963724045.html)
@@ -215,16 +223,18 @@ An SOIC8 clip is usually a must.
 
 ## 8. Soldering and Rework
 
-What are you doing without a soldering iron? How're you gonna get that TSOP48 flash chip off the PCB? A flathead screwdriver and a prayer?
+How else are you gonna get that TSOP48 flash chip off the PCB? A flathead screwdriver and a prayer?
 
 ### Soldering Irons
 
+Soldering irons have two main methods of driving the tip: through a ceramic heating element directly below the tip, or direct drive, where the entire tip is a self-contained cartridge containing the heating element and thermocouple. The latter is more advanced, as it is more responsive and has better temperature regulation, but costs more. The former method is older, cheaper and generally found on entry-level irons like the Hakko 888D or Weller WE-1010, but there are a whole range of cheap and good Chinese irons employing direct drive technology. Direct drive technology is also employed by portable irons like the TS100 or Pinecil.
+
 - _Standard Irons_
-  - [KSGER T12 Soldering Iron](https://www.aliexpress.com/item/32971888371.html)
-  - [Aixun T3A](https://www.aliexpress.com/item/1005002983155657.html)
-  - [XTronic 3020-XTS](https://www.amazon.com/dp/B01DGZFSNE/)
-  - [Hakko 888D](https://www.amazon.com/dp/B00ANZRT4M/)
-  - [Weller WE-1010](https://www.amazon.com/Weller-WE1010NA-Digital-Soldering-Station/dp/B077JDGY1J/)
+  - [KSGER T12 Soldering Iron](https://www.aliexpress.com/item/32971888371.html) (Great value direct-drive)
+  - [Aixun T3A](https://www.aliexpress.com/item/1005002983155657.html) (Smart direct-drive iron, get the stand as well)
+  - [XTronic 3020-XTS](https://www.amazon.com/dp/B01DGZFSNE/) (Great value low-cost set)
+  - [Hakko 888D](https://www.amazon.com/dp/B00ANZRT4M/) (_The_ beginner's iron)
+  - [Weller WE-1010](https://www.amazon.com/Weller-WE1010NA-Digital-Soldering-Station/dp/B077JDGY1J/) (Pretty good value)
 - _Portable Irons_
   - [TS100](https://www.aliexpress.com/item/32860309312.html)
   - [TS80P](https://www.aliexpress.com/item/32904980528.html)
@@ -246,9 +256,12 @@ What are you doing without a soldering iron? How're you gonna get that TSOP48 fl
 
 I don't think I need to link these, right? Google is your friend.
 
-- Flux Pen
-- Solder
-  - _Tip: Get good rosin core solder. Anything below $10 isn't worth it._
+- Solder Flux
+  - [Flux Comparison](https://www.youtube.com/watch?v=iKDAmY9Rdag)
+- Solder Wire
+  - _Tip: Get good rosin core solder. Anything below $10 isn't worth it. Good brands include Kester and Multicore, but some cheap Chinese brands are equally good._
+  - _Another tip: Get a few rolls of different gauges. 0.4-5mm is good for SMD soldering, while 0.6-8mm is better suited for through-hole soldering._
+  - [Solder Comparison](https://www.youtube.com/watch?v=zZ9wxs6xuYU)
 - Solder Wick
 - Desoldering Pump
 - Helping Hands
@@ -267,7 +280,8 @@ Sometimes the tools you have just aren't doing the exact job you need them to, o
 ### Hardware
 
 - [Arduino](https://store.arduino.cc/) (and [compatible boards](https://thepihut.com/collections/arduino-compatible-boards))
-- [Raspberry Pi](https://www.raspberrypi.com/products/)
+- [Raspberry Pi 4/Zero](https://www.raspberrypi.com/products/) (full Linux system)
+- [Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) (ARM-based microcontroller)
 - [ESP32](https://www.aliexpress.com/wholesale?catId=0&initiative_id=AS_20220204051728&SearchText=esp32) (Good for wireless dev)
 - [STM32F103C8T6 "Blue Pill"](https://www.aliexpress.com/wholesale?catId=0&initiative_id=AS_20220204052238&SearchText=stm32f103c8t6)
   - You may need an [ST-Link V2 programmer](https://www.st.com/en/development-tools/st-link-v2.html) (or [clone](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20220204052346&SearchText=st+link+v2))
@@ -278,7 +292,12 @@ Sometimes the tools you have just aren't doing the exact job you need them to, o
 - [Arduino IDE](https://www.arduino.cc/en/software)
 - [STM32duino](https://github.com/stm32duino/Arduino_Core_STM32) (program your STM32 board with the Arduino IDE)
 - [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html) (or not, I'm not your boss)
+- [PlatformIO](https://platformio.org/) (like Arduino IDE on steroids)
+- [libopencm3](https://libopencm3.org/) (ARM Cortex development library)
+- [Pi Pico SDK](https://github.com/raspberrypi/pico-sdk)
+- [rp2040_hal](https://docs.rs/rp2040-hal/latest/rp2040_hal/) (if you like Rust)
 - [KiCAD](https://www.kicad.org/) (Roll your own PCB)
+- [Altium CircuitMaker](https://www.altium.com/circuitmaker) (Windows only)
 - [Verilog](https://www.chipverify.com/verilog/verilog-tutorial) (Hardware Description Language)
 
 ---
