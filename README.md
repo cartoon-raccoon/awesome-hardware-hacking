@@ -39,19 +39,20 @@ The one thing every hardware enthusiast must have in their toolkit is a way of c
 
 ### Hardware
 
-- _Multitools_
-  - [Tigard](https://github.com/tigard-tools/tigard) (All 4)
-  - [GreatFET One](https://greatscottgadgets.com/greatfet/one/) (All 4 + USB)
-  - [HydraBus](https://hydrabus.com/?v=0f177369a3b7) (All 4 and [more](https://github.com/hydrabus/hydrafw/wiki/HydraFW-console-commands)!)
-  - [Shikra](https://int3.cc/products/the-shikra) (All 4)
-  - [Attify Badge](https://www.attify-store.com/products/attify-badge-uart-jtag-spi-i2c) (All 4)
-  - [Bus Pirate](http://dangerousprototypes.com/docs/Bus_Pirate) (All 4, outdated, use something else)
-  - Generic FT2232 Serial-USB breakout board ([Micro-USB](https://www.sparkfun.com/products/12731))
-- _Other Tools_
-  - Arduino [Uno](https://www.arduino.cc/en/pmwiki.php?n=Main/arduinoBoardUno)/[Nano](https://www.arduino.cc/en/pmwiki.php?n=Main/ArduinoBoardNano) (JTAG enumeration, UART)
-  - [Seeeduino Nano](https://www.seeedstudio.com/Seeeduino-Nano-p-4111.html) (see above)
-  - [JTAGulator](http://www.grandideastudio.com/jtagulator/) (JTAG/UART Enumeration)
-  - [Segger J-Link Edu](https://www.adafruit.com/product/1369) (JTAG debugger)
+_Multitools_
+
+- [Tigard](https://github.com/tigard-tools/tigard) (All 4)
+- [GreatFET One](https://greatscottgadgets.com/greatfet/one/) (All 4 + USB)
+- [HydraBus](https://hydrabus.com/?v=0f177369a3b7) (All 4 and [more](https://github.com/hydrabus/hydrafw/wiki/HydraFW-console-commands)!)
+- [Shikra](https://int3.cc/products/the-shikra) (All 4)
+- [Attify Badge](https://www.attify-store.com/products/attify-badge-uart-jtag-spi-i2c) (All 4)
+- [Bus Pirate](http://dangerousprototypes.com/docs/Bus_Pirate) (All 4, outdated, use something else)
+- Generic FT2232 Serial-USB breakout board ([Micro-USB](https://www.sparkfun.com/products/12731))
+_Other Tools_
+- Arduino [Uno](https://www.arduino.cc/en/pmwiki.php?n=Main/arduinoBoardUno)/[Nano](https://www.arduino.cc/en/pmwiki.php?n=Main/ArduinoBoardNano) (JTAG enumeration, UART)
+- [Seeeduino Nano](https://www.seeedstudio.com/Seeeduino-Nano-p-4111.html) (see above)
+- [JTAGulator](http://www.grandideastudio.com/jtagulator/) (JTAG/UART Enumeration)
+- [Segger J-Link Edu](https://www.adafruit.com/product/1369) (JTAG debugger)
 
 ### Software
 
@@ -148,44 +149,46 @@ On the software side, you've found a mysterious binary on the target system. How
 
 ### Hardware
 
-- _Oscilloscopes_
+_Oscilloscopes_
+
 _Tip: Get an oscilloscope with good memory depth. The ones listed here aren't great in that regard, but they have great value._
-  - [Hantek DSO2000-series Oscilloscopes](http://www.hantek.com/products/detail/17182) (Great value for money)
-  - [Hantek DSO4004-series Oscilloscopes](http://www.hantek.com/products/detail/12167) (Good starter for those with bigger budgets, comes with AWG)
-  - [FNIRSI 1014D Oscilloscope](https://www.aliexpress.com/item/1005002340647364.html) (Good entry level scope)
-  - [Rigol DS1000Z-series Oscilloscopes](https://int.rigol.com/products/detail/DS1000Z) (Standard entry-level scopes also great value)
-  - [Picoscope 2000-series Oscilloscopes](https://www.picotech.com/oscilloscope/2000/picoscope-2000-overview) (USB scope)
-  - [ChipWhisperer](https://github.com/newaetech/chipwhisperer)
-  - [Hantek 6022BE](http://www.hantek.com/products/detail/31) (Not great, but it's cheap)
-  - Anything by Keysight/Tektronix is excellent. Only problem is they cost as much as a mid-tier sedan.
-    - The [Keysight DSO1204G](https://www.keysight.com/sg/en/support/DSOX1204G/oscilloscope-70-100-200-mhz-4-analog-channels-waveform-generator.html) is pretty good value, however, and is a good upgrade from a Hantek.
-- _Logic Analyzers_
-  - [Saleae Logic Pro Logic Analyzers](https://www.saleae.com/) (8-16ch, 25-100MHz/100-500MS/s)
-  - [DSLogic Plus Logic Analyzer](https://www.dreamsourcelab.com/shop/logic-analyzer/dslogic-plus/) (16ch, up to 400MHz, best value)
-  - [BitMagic Basic Logic Analyzer](https://1bitsquared.com/products/bitmagic-basic) (8ch 24MHz)
-  - [Generic USB Saleae Logic 8 Clone](https://www.aliexpress.com/item/1005003812410259.html) (8ch 24MHz)
-- _Multimeters_
-  - [Mastech 8268](https://www.amazon.com/Mastech-MS8268-Digital-Manual-Multimeter/dp/B000JQ4O2U)
-  - [UNI-T UT61E+ True RMS](https://www.uni-trend.com/meters/html/product/General_Meters/Digital_Multimeters/UT61%20161%20Series/UT61E+.html)
-  - [Klein Tools MM600](https://www.amazon.com/dp/B018CLOSTC?tag=healthyhandyman-20&linkCode=osi&th=1&psc=1)
-  - [EEVblog BM235](https://www.eevblog.com/product/bm235/)
-  - [Brymen BM869S](https://brymenmeter.com/brymen-bm869s-multimeter.html)
-  - [Fluke 115](https://www.fluke.com/en-us/product/electrical-testing/digital-multimeters/fluke-115)
-  - [Fluke 87V](https://www.fluke.com/en-us/product/electrical-testing/digital-multimeters/fluke-87v)
+
+- [Hantek DSO2000-series Oscilloscopes](http://www.hantek.com/products/detail/17182) (Great value for money)
+- [Hantek DSO4004-series Oscilloscopes](http://www.hantek.com/products/detail/12167) (Good starter for those with bigger budgets, comes with AWG)
+- [FNIRSI 1014D Oscilloscope](https://www.aliexpress.com/item/1005002340647364.html) (Good entry level scope)
+- [Rigol DS1000Z-series Oscilloscopes](https://int.rigol.com/products/detail/DS1000Z) (Standard entry-level scopes also great value)
+- [Picoscope 2000-series Oscilloscopes](https://www.picotech.com/oscilloscope/2000/picoscope-2000-overview) (USB scope)
+- [ChipWhisperer](https://github.com/newaetech/chipwhisperer)
+- [Hantek 6022BE](http://www.hantek.com/products/detail/31) (Not great, but it's cheap)
+- Anything by Keysight/Tektronix is excellent. Only problem is they cost as much as a mid-tier sedan.
+  - The [Keysight DSO1204G](https://www.keysight.com/sg/en/support/DSOX1204G/oscilloscope-70-100-200-mhz-4-analog-channels-waveform-generator.html) is pretty good value, however, and is a good upgrade from a Hantek.
+_Logic Analyzers_
+- [Saleae Logic Pro Logic Analyzers](https://www.saleae.com/) (8-16ch, 25-100MHz/100-500MS/s)
+- [DSLogic Plus Logic Analyzer](https://www.dreamsourcelab.com/shop/logic-analyzer/dslogic-plus/) (16ch, up to 400MHz, best value)
+- [BitMagic Basic Logic Analyzer](https://1bitsquared.com/products/bitmagic-basic) (8ch 24MHz)
+- [Generic USB Saleae Logic 8 Clone](https://www.aliexpress.com/item/1005003812410259.html) (8ch 24MHz)
+_Multimeters_
+- [Mastech 8268](https://www.amazon.com/Mastech-MS8268-Digital-Manual-Multimeter/dp/B000JQ4O2U)
+- [UNI-T UT61E+ True RMS](https://www.uni-trend.com/meters/html/product/General_Meters/Digital_Multimeters/UT61%20161%20Series/UT61E+.html)
+- [Klein Tools MM600](https://www.amazon.com/dp/B018CLOSTC?tag=healthyhandyman-20&linkCode=osi&th=1&psc=1)
+- [EEVblog BM235](https://www.eevblog.com/product/bm235/)
+- [Brymen BM869S](https://brymenmeter.com/brymen-bm869s-multimeter.html)
+- [Fluke 115](https://www.fluke.com/en-us/product/electrical-testing/digital-multimeters/fluke-115)
+- [Fluke 87V](https://www.fluke.com/en-us/product/electrical-testing/digital-multimeters/fluke-87v)
     - _Tip: avoid Flukes. They're great, but they're priced so high because they're designed for professional electricians and government/corporate applications, where trust and a long chain of auditing is required. You can get a multimeter with an almost equal feature set and build quality as a Fluke for a lot cheaper._
-- _Microscopes_
-  - [Unbranded 600X Digital Microscope](https://www.aliexpress.com/item/32846603691.html)
-  - [Celestron Digital Microscope](https://www.amazon.sg/Celestron-MicroDirect-Handheld-Microscope-44316/dp/B01MF5KMBL/)
-  - [ANNLOV 1-1200X 7in Digital Microscope](https://www.amazon.com/Microscope-ANNLOV-Maginfication-Electronic-Adjustable/dp/B087311SKR/)
-  - [Andonstar](https://www.aliexpress.com/store/700244) is a fairly reputable brand, available on AliExpress/Banggood.
-- _Function Generators_ (WIP) (UNI-T)
+_Microscopes_
+- [Unbranded 600X Digital Microscope](https://www.aliexpress.com/item/32846603691.html)
+- [Celestron Digital Microscope](https://www.amazon.sg/Celestron-MicroDirect-Handheld-Microscope-44316/dp/B01MF5KMBL/)
+- [ANNLOV 1-1200X 7in Digital Microscope](https://www.amazon.com/Microscope-ANNLOV-Maginfication-Electronic-Adjustable/dp/B087311SKR/)
+- [Andonstar](https://www.aliexpress.com/store/700244) is a fairly reputable brand, available on AliExpress/Banggood.
+_Function Generators_ (WIP) (UNI-T)
   - _Not as important for hardware hacking, but useful if you're tinkering with electronics in general. Some oscilloscopes come with a built-in function generator, so you can look out for those._
-- _Power Supply Units_
-  - [MDP-P905 Mini Power Supply](https://www.aliexpress.com/item/33056122346.html)
-  - [Hantek Power Supply](https://www.aliexpress.com/item/1005003642478236.html)
-  - [Wanptek Power Supply](https://www.aliexpress.com/item/1005001798369404.html)
-  - [Build Your Own Variable Lab Bench Power Supply](https://www.youtube.com/watch?v=wI-KYRdmx-E)
-  - [Simple Power Supply That Anyone Can Build](https://dronebotworkshop.com/simple-supply/)
+  _Power Supply Units_
+- [MDP-P905 Mini Power Supply](https://www.aliexpress.com/item/33056122346.html)
+- [Hantek Power Supply](https://www.aliexpress.com/item/1005003642478236.html)
+- [Wanptek Power Supply](https://www.aliexpress.com/item/1005001798369404.html)
+- [Build Your Own Variable Lab Bench Power Supply](https://www.youtube.com/watch?v=wI-KYRdmx-E)
+- [Simple Power Supply That Anyone Can Build](https://dronebotworkshop.com/simple-supply/)
 
 ### Software
 
@@ -229,16 +232,19 @@ How else are you gonna get that TSOP48 flash chip off the PCB? A flathead screwd
 
 Soldering irons have two main methods of driving the tip: through a ceramic heating element directly below the tip, or direct drive, where the entire tip is a self-contained cartridge containing the heating element and thermocouple. The latter is more advanced, as it is more responsive and has better temperature regulation, but costs more. The former method is older, cheaper and generally found on entry-level irons like the Hakko 888D or Weller WE-1010, but there are a whole range of cheap and good Chinese irons employing direct drive technology. Direct drive technology is also employed by portable irons like the TS100 or Pinecil.
 
-- _Standard Irons_
-  - [KSGER T12 Soldering Iron](https://www.aliexpress.com/item/32971888371.html) (Great value direct-drive)
-  - [Aixun T3A](https://www.aliexpress.com/item/1005002983155657.html) (Smart direct-drive iron, get the stand as well)
-  - [XTronic 3020-XTS](https://www.amazon.com/dp/B01DGZFSNE/) (Great value low-cost set)
-  - [Hakko 888D](https://www.amazon.com/dp/B00ANZRT4M/) (_The_ beginner's iron)
-  - [Weller WE-1010](https://www.amazon.com/Weller-WE1010NA-Digital-Soldering-Station/dp/B077JDGY1J/) (Pretty good value)
-- _Portable Irons_
-  - [TS100](https://www.aliexpress.com/item/32860309312.html)
-  - [TS80P](https://www.aliexpress.com/item/32904980528.html)
-  - [Pinecil](https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/)
+_Standard Irons_
+
+- [KSGER T12 Soldering Iron](https://www.aliexpress.com/item/32971888371.html) (Great value direct-drive)
+- [Aixun T3A](https://www.aliexpress.com/item/1005002983155657.html) (Smart direct-drive iron, get the stand as well)
+- [XTronic 3020-XTS](https://www.amazon.com/dp/B01DGZFSNE/) (Great value low-cost set)
+- [Hakko 888D](https://www.amazon.com/dp/B00ANZRT4M/) (_The_ beginner's iron)
+- [Weller WE-1010](https://www.amazon.com/Weller-WE1010NA-Digital-Soldering-Station/dp/B077JDGY1J/) (Pretty good value)
+
+_Portable Irons_
+
+- [TS100](https://www.aliexpress.com/item/32860309312.html)
+- [TS80P](https://www.aliexpress.com/item/32904980528.html)
+- [Pinecil](https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/)
 
 ### Hot Air Guns
 
