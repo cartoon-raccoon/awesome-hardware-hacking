@@ -162,12 +162,16 @@ _Tip: Get an oscilloscope with good memory depth. The ones listed here aren't gr
 - [Hantek 6022BE](http://www.hantek.com/products/detail/31) (Not great, but it's cheap)
 - Anything by Keysight/Tektronix is excellent. Only problem is they cost as much as a mid-tier sedan.
   - The [Keysight DSO1204G](https://www.keysight.com/sg/en/support/DSOX1204G/oscilloscope-70-100-200-mhz-4-analog-channels-waveform-generator.html) is pretty good value, however, and is a good upgrade from a Hantek.
+
 _Logic Analyzers_
+
 - [Saleae Logic Pro Logic Analyzers](https://www.saleae.com/) (8-16ch, 25-100MHz/100-500MS/s)
 - [DSLogic Plus Logic Analyzer](https://www.dreamsourcelab.com/shop/logic-analyzer/dslogic-plus/) (16ch, up to 400MHz, best value)
 - [BitMagic Basic Logic Analyzer](https://1bitsquared.com/products/bitmagic-basic) (8ch 24MHz)
 - [Generic USB Saleae Logic 8 Clone](https://www.aliexpress.com/item/1005003812410259.html) (8ch 24MHz)
+
 _Multimeters_
+
 - [Mastech 8268](https://www.amazon.com/Mastech-MS8268-Digital-Manual-Multimeter/dp/B000JQ4O2U)
 - [UNI-T UT61E+ True RMS](https://www.uni-trend.com/meters/html/product/General_Meters/Digital_Multimeters/UT61%20161%20Series/UT61E+.html)
 - [Klein Tools MM600](https://www.amazon.com/dp/B018CLOSTC?tag=healthyhandyman-20&linkCode=osi&th=1&psc=1)
@@ -175,15 +179,21 @@ _Multimeters_
 - [Brymen BM869S](https://brymenmeter.com/brymen-bm869s-multimeter.html)
 - [Fluke 115](https://www.fluke.com/en-us/product/electrical-testing/digital-multimeters/fluke-115)
 - [Fluke 87V](https://www.fluke.com/en-us/product/electrical-testing/digital-multimeters/fluke-87v)
-    - _Tip: avoid Flukes. They're great, but they're priced so high because they're designed for professional electricians and government/corporate applications, where trust and a long chain of auditing is required. You can get a multimeter with an almost equal feature set and build quality as a Fluke for a lot cheaper._
+  - _Tip: avoid Flukes. They're great, but they're priced so high because they're designed for professional electricians and government/corporate applications, where trust and a long chain of auditing is required. You can get a multimeter with an almost equal feature set and build quality as a Fluke for a lot cheaper._
+
 _Microscopes_
+
 - [Unbranded 600X Digital Microscope](https://www.aliexpress.com/item/32846603691.html)
 - [Celestron Digital Microscope](https://www.amazon.sg/Celestron-MicroDirect-Handheld-Microscope-44316/dp/B01MF5KMBL/)
 - [ANNLOV 1-1200X 7in Digital Microscope](https://www.amazon.com/Microscope-ANNLOV-Maginfication-Electronic-Adjustable/dp/B087311SKR/)
 - [Andonstar](https://www.aliexpress.com/store/700244) is a fairly reputable brand, available on AliExpress/Banggood.
+
 _Function Generators_ (WIP) (UNI-T)
-  - _Not as important for hardware hacking, but useful if you're tinkering with electronics in general. Some oscilloscopes come with a built-in function generator, so you can look out for those._
-  _Power Supply Units_
+
+- _Not as important for hardware hacking, but useful if you're tinkering with electronics in general. Some oscilloscopes come with a built-in function generator, so you can look out for those._
+
+_Power Supply Units_
+
 - [MDP-P905 Mini Power Supply](https://www.aliexpress.com/item/33056122346.html)
 - [Hantek Power Supply](https://www.aliexpress.com/item/1005003642478236.html)
 - [Wanptek Power Supply](https://www.aliexpress.com/item/1005001798369404.html)
