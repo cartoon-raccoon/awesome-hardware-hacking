@@ -39,20 +39,29 @@ The one thing every hardware enthusiast must have in their toolkit is a way of c
 
 ### Hardware
 
-_Multitools_
+Generally, the hardware needed for tinkering with serial protocols is quite minimal, although a lot of options exist. You will usually just need a multitool and a bunch of jumper wires (or a SOIC8/16 clip in the case of SPI) to connect to headers on the device under test (DUT), although some soldering may be required to reattach removed headers.
 
-- [Tigard](https://github.com/tigard-tools/tigard) (All 4)
-- [GreatFET One](https://greatscottgadgets.com/greatfet/one/) (All 4 + USB)
+Another thing to consider with multitools are the voltages they are designed to work with. This is important as using the wrong voltage may fry your precious multitool board. Some boards might only work at 5 volts, while others may only work on 3.3 volts. Tools like the Tigard get around this by incorporating a voltage level switch and inbuilt level shifters to allow the user to select the voltage level used.
+
+Other tools also exist, primarily to make your life easier, or as separate JTAG debuggers, but they generally aren't essential, and you can work without them.
+
+#### Multitools
+
+- [Tigard](https://github.com/tigard-tools/tigard) (All 4 with inbuilt level shifting)
+- [GreatFET One](https://greatscottgadgets.com/greatfet/one/) (All 4 + USB, GPIO 3.3V only)
 - [HydraBus](https://hydrabus.com/?v=0f177369a3b7) (All 4 and [more](https://github.com/hydrabus/hydrafw/wiki/HydraFW-console-commands)!)
 - [Shikra](https://int3.cc/products/the-shikra) (All 4)
 - [Attify Badge](https://www.attify-store.com/products/attify-badge-uart-jtag-spi-i2c) (All 4)
 - [Bus Pirate](http://dangerousprototypes.com/docs/Bus_Pirate) (All 4, outdated, use something else)
 - Generic FT2232 Serial-USB breakout board ([Micro-USB](https://www.sparkfun.com/products/12731))
-_Other Tools_
+
+#### Other Tools
+
 - Arduino [Uno](https://www.arduino.cc/en/pmwiki.php?n=Main/arduinoBoardUno)/[Nano](https://www.arduino.cc/en/pmwiki.php?n=Main/ArduinoBoardNano) (JTAG enumeration, UART)
 - [Seeeduino Nano](https://www.seeedstudio.com/Seeeduino-Nano-p-4111.html) (see above)
 - [JTAGulator](http://www.grandideastudio.com/jtagulator/) (JTAG/UART Enumeration)
 - [Segger J-Link Edu](https://www.adafruit.com/product/1369) (JTAG debugger)
+- [Black Magic Probe](https://1bitsquared.com/products/black-magic-probe) (JTAG probe with inbuilt GDB server)
 
 ### Software
 
@@ -149,28 +158,28 @@ On the software side, you've found a mysterious binary on the target system. How
 
 ### Hardware
 
-_Oscilloscopes_
+#### Oscilloscopes
 
 _Tip: Get an oscilloscope with good memory depth. The ones listed here aren't great in that regard, but they have great value._
 
 - [Hantek DSO2000-series Oscilloscopes](http://www.hantek.com/products/detail/17182) (Great value for money)
 - [Hantek DSO4004-series Oscilloscopes](http://www.hantek.com/products/detail/12167) (Good starter for those with bigger budgets, comes with AWG)
 - [FNIRSI 1014D Oscilloscope](https://www.aliexpress.com/item/1005002340647364.html) (Good entry level scope)
-- [Rigol DS1000Z-series Oscilloscopes](https://int.rigol.com/products/detail/DS1000Z) (Standard entry-level scopes also great value)
+- [Rigol DS1000Z-series Oscilloscopes](https://int.rigol.com/products/detail/DS1000Z) (Standard entry-level scopes, also great value)
 - [Picoscope 2000-series Oscilloscopes](https://www.picotech.com/oscilloscope/2000/picoscope-2000-overview) (USB scope)
 - [ChipWhisperer](https://github.com/newaetech/chipwhisperer)
 - [Hantek 6022BE](http://www.hantek.com/products/detail/31) (Not great, but it's cheap)
 - Anything by Keysight/Tektronix is excellent. Only problem is they cost as much as a mid-tier sedan.
   - The [Keysight DSO1204G](https://www.keysight.com/sg/en/support/DSOX1204G/oscilloscope-70-100-200-mhz-4-analog-channels-waveform-generator.html) is pretty good value, however, and is a good upgrade from a Hantek.
 
-_Logic Analyzers_
+#### Logic Analyzers
 
 - [Saleae Logic Pro Logic Analyzers](https://www.saleae.com/) (8-16ch, 25-100MHz/100-500MS/s)
 - [DSLogic Plus Logic Analyzer](https://www.dreamsourcelab.com/shop/logic-analyzer/dslogic-plus/) (16ch, up to 400MHz, best value)
 - [BitMagic Basic Logic Analyzer](https://1bitsquared.com/products/bitmagic-basic) (8ch 24MHz)
 - [Generic USB Saleae Logic 8 Clone](https://www.aliexpress.com/item/1005003812410259.html) (8ch 24MHz)
 
-_Multimeters_
+#### Multimeters
 
 - [Mastech 8268](https://www.amazon.com/Mastech-MS8268-Digital-Manual-Multimeter/dp/B000JQ4O2U)
 - [UNI-T UT61E+ True RMS](https://www.uni-trend.com/meters/html/product/General_Meters/Digital_Multimeters/UT61%20161%20Series/UT61E+.html)
@@ -181,18 +190,20 @@ _Multimeters_
 - [Fluke 87V](https://www.fluke.com/en-us/product/electrical-testing/digital-multimeters/fluke-87v)
   - _Tip: avoid Flukes. They're great, but they're priced so high because they're designed for professional electricians and government/corporate applications, where trust and a long chain of auditing is required. You can get a multimeter with an almost equal feature set and build quality as a Fluke for a lot cheaper._
 
-_Microscopes_
+#### Microscopes
+
+_Microscopes are often needed when reversing modern embedded devices, as they contain extremely tiny SMD components. They are useful tasks such as getting the board number off a tiny IC, or for looking at traces in the PCB itself._
 
 - [Unbranded 600X Digital Microscope](https://www.aliexpress.com/item/32846603691.html)
 - [Celestron Digital Microscope](https://www.amazon.sg/Celestron-MicroDirect-Handheld-Microscope-44316/dp/B01MF5KMBL/)
 - [ANNLOV 1-1200X 7in Digital Microscope](https://www.amazon.com/Microscope-ANNLOV-Maginfication-Electronic-Adjustable/dp/B087311SKR/)
 - [Andonstar](https://www.aliexpress.com/store/700244) is a fairly reputable brand, available on AliExpress/Banggood.
 
-_Function Generators_ (WIP) (UNI-T)
+#### Function Generators (WIP)
 
-- _Not as important for hardware hacking, but useful if you're tinkering with electronics in general. Some oscilloscopes come with a built-in function generator, so you can look out for those._
+_Not as important for hardware hacking, but very useful if you're tinkering with electronics in general. Some oscilloscopes come with a built-in function generator, so you can look out for those._
 
-_Power Supply Units_
+#### Power Supply Units
 
 - [MDP-P905 Mini Power Supply](https://www.aliexpress.com/item/33056122346.html)
 - [Hantek Power Supply](https://www.aliexpress.com/item/1005003642478236.html)
@@ -209,11 +220,13 @@ _Power Supply Units_
   - [Supported hardware](https://sigrok.org/wiki/Supported_hardware)
   - [Pulseview User Manual](https://sigrok.org/doc/pulseview/0.4.1/manual.html)
   - [Sigrok GitHub mirror](https://github.com/sigrokproject)
-- _Emulation and Environment Building_
-  - [QEMU](https://www.qemu.org/) ([documentation](https://qemu-project.gitlab.io/qemu/))
-  - [Yocto Project](https://www.yoctoproject.org/) (building the target environment to emulate on QEMU)
-  - [Buildroot](https://buildroot.org/) (like Yocto but simpler, builds kernel and root FS only)
-  - [OpenWRT](https://openwrt.org/) (similar but targeted at routers)
+
+#### Emulation and Environment Building
+
+- [QEMU](https://www.qemu.org/) ([documentation](https://qemu-project.gitlab.io/qemu/))
+- [Yocto Project](https://www.yoctoproject.org/) (building the target environment to emulate on QEMU)
+- [Buildroot](https://buildroot.org/) (like Yocto but simpler, builds kernel and root FS only)
+- [OpenWRT](https://openwrt.org/) (similar but targeted at routers)
 
 ### Accessories
 
@@ -225,7 +238,7 @@ _Power Supply Units_
 
 These are used to program non-volatile memory such as EEPROMS. Normally used with SPI.
 
-Generally, you should have a programmer capable of writing to most (E)EPROMS, and adapters for non-DIP form factors like SOIC or TSOP. Most sellers will add on these accessories at a cost.
+Generally, you should have a programmer capable of writing to most (E)EPROMS, and adapters for non-DIP form factors like SOIC or TSOP, as well as voltage adapters for chips that use a different voltage level. Most sellers will add on these accessories at a cost.
 
 An SOIC8 clip is usually a good start to a collection that you can build up over time.
 
@@ -238,11 +251,19 @@ An SOIC8 clip is usually a good start to a collection that you can build up over
 
 How else are you gonna get that TSOP48 flash chip off the PCB? A flathead screwdriver and a prayer?
 
+Soldering irons and hot air rework guns are invaluable to the hardware hacker. From resoldering manufacturer-removed JTAG/UART pins to drag soldering a flash chip patched with custom firmware, soldering irons are crucial to hardware hacking work, and there are numerous things you cannot do without them.
+
+Choosing the right soldering iron is also extremely important for electronics work. Different soldering irons have different applications, and choosing the wrong one can easily destroy your equipment or DUT. A general rule of thumb is to always buy an iron with a good and accurate temperature control. Cheap irons without, or with a low quality temperature control have unpredictable tip temperature and are generally a huge pain to work with. A good soldering iron should also be responsive to drops in temperature.
+
+For more information on soldering, check out this video series: ([Part 1](https://www.youtube.com/watch?v=J5Sb21qbpEQ) | [Part 2](https://www.youtube.com/watch?v=fYz5nIHH0iY) | [Part 3](https://www.youtube.com/watch?v=b9FC9fAlfQE))
+
 ### Soldering Irons
 
 Soldering irons have two main methods of driving the tip: through a ceramic heating element directly below the tip, or direct drive, where the entire tip is a self-contained cartridge containing the heating element and thermocouple. The latter is more advanced, as it is more responsive and has better temperature regulation, but costs more. The former method is older, cheaper and generally found on entry-level irons like the Hakko 888D or Weller WE-1010, but there are a whole range of cheap and good Chinese irons employing direct drive technology. Direct drive technology is also employed by portable irons like the TS100 or Pinecil.
 
-_Standard Irons_
+More information can be found in this [video](https://www.youtube.com/watch?v=scvS2yeUH00).
+
+#### Standard Irons
 
 - [KSGER T12 Soldering Iron](https://www.aliexpress.com/item/32971888371.html) (Great value direct-drive)
 - [Aixun T3A](https://www.aliexpress.com/item/1005002983155657.html) (Smart direct-drive iron, get the stand as well)
@@ -250,7 +271,7 @@ _Standard Irons_
 - [Hakko 888D](https://www.amazon.com/dp/B00ANZRT4M/) (_The_ beginner's iron)
 - [Weller WE-1010](https://www.amazon.com/Weller-WE1010NA-Digital-Soldering-Station/dp/B077JDGY1J/) (Pretty good value)
 
-_Portable Irons_
+#### Portable Irons
 
 - [TS100](https://www.aliexpress.com/item/32860309312.html)
 - [TS80P](https://www.aliexpress.com/item/32904980528.html)
@@ -258,9 +279,12 @@ _Portable Irons_
 
 ### Hot Air Guns
 
+_Hot air guns are generally used for SMD work, as soldering irons are too clunky to handle those tiny components, that can get as small as 0.6mm in size. The same general rule for choosing a good soldering iron applies to these tools as well_
+
 - [Yarboly 8858D](https://banggood.com/Yarboly-8858D-Hot-Air-Gun-BGA-Rework-Solder-Station-Hair-Dryer-for-Soldering-SMD-SMT-Welding-Repair-Tools-p-1880309.html)
 - [PG8018LCD Hot Air Gun](https://www.aliexpress.com/item/4000183129636.html)
 - [Handskit Micro Rework Station](https://www.aliexpress.com/item/1005002890887241.html)
+- [Quick 861DW 1000W Digital Rework Station](https://www.amazon.com/Quick-861DW-Digital-Station-Display/dp/B00EID23J6) (as recommended by [Louis Rossmann](https://en.wikipedia.org/wiki/Louis_Rossmann))
 
 ### Rework Stations
 
