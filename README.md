@@ -220,6 +220,7 @@ _Not as important for hardware hacking, but very useful if you're tinkering with
   - [Supported hardware](https://sigrok.org/wiki/Supported_hardware)
   - [Pulseview User Manual](https://sigrok.org/doc/pulseview/0.4.1/manual.html)
   - [Sigrok GitHub mirror](https://github.com/sigrokproject)
+- [uart-decode](https://github.com/staxs78/uart-decode) (dependency-free Python: decode baud, LSB-first frames and bytes from a scope/logic-analyzer capture — handles inverted idle levels, gated bursts and jitter)
 
 #### Emulation and Environment Building
 
