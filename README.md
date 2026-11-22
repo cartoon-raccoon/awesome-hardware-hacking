@@ -92,6 +92,7 @@ Even though USB is technically a serial communication/data transfer protocol, it
 
 - [FaceDancer](https://github.com/greatscottgadgets/Facedancer) (USB device emulation)
 - [PhyWhisperer](https://phywhispererusb.readthedocs.io/en/latest/) (Python library)
+- [usb-rea](https://github.com/emirmrkaljevic/usb-rea) (infers a device protocol from USBPcap/usbmon captures and drafts a Linux driver)
 
 ---
 
